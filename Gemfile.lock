@@ -249,6 +249,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
+  jekyll-remote-theme
   jekyll-seo-tag
   jekyll-sitemap
   just-the-docs
