@@ -12,5 +12,5 @@ Here you will find the necessary resources to extend the functionalities and cus
 ## Table of contents
 {: .no_toc .text-delta }
 
-- [HTML Templates](./html-templates)
-- [JSON Services](./json-services)
+- [HTML Templates](./docs/html-templates)
+- [JSON Services](./docs/json-services)
