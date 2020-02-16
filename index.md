@@ -1,1 +1,0 @@
-DSPLAY Developers Site
