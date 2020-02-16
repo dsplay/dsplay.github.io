@@ -1,5 +1,5 @@
 ---
-nav_order: 1
+nav_order: 2
 parent: DSPLAY HTML Templates
 title: dsplay_media
 has_children: true
