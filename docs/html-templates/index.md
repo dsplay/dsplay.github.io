@@ -1,10 +1,10 @@
 ---
 nav_order: 2
-title: DSPLAY HTML Templates
+title: HTML Templates
 has_children: true
 has_toc: false
 ---
-# DSPLAY HTML Templates
+# HTML Templates
 {: .no_toc }
 
 ## Table of contents
@@ -13,9 +13,35 @@ has_toc: false
 1. TOC
 {:toc}
 
+## What is a HTML Template?
+
+A **HTML template** is the piece of software responsible for rendering the content of your media in your screen.
+
+In DSPLAY, most of media types can have its layout and presentation customized. 
+You can change colors, fonts, images, add your brand, and totally redefine the way a media will be displayed.
+
+The following media types allow customization through custom HTML templates:
+- [ ] Video
+- [ ] Audio
+- [ ] YouTube
+- [x] Image
+- [ ] Web Site
+- [x] Message
+- [x] JSON Service
+- [x] RSS
+- [x] Instagram
+- [x] Twitter
+- [x] World Weather Forecast
+- [x] Brazilian Lottery
+- [x] Weather Forecast
+- [x] Daily Horoscope
+
+> **Message** and **JSON Service** media types are too generic and because of that they don't have a default template. So these kind of media can only be created by using a custom template.
+
+
 ## Basics
 
-All DSPLAY templates are just simple HTML apps. They can be built using any tool that outputs a static HTML5 application.
+All templates in DSPLAY are just simple HTML apps. They can be built using any tool that outputs a static HTML5 application.
 
 Your Template can include:
 - [x] HTML 5
@@ -28,7 +54,7 @@ Your Template can include:
 - [ ] Plugin (e.g. Flash, Applet)
 
 
-## Dir Structure
+## Directory Structure
 
 The only requirement regarding the project structure is that you must have an `index.html` in the root of your project, and a file called `dsplay-data.js` located anywhere in the project folder. The rest of the structure is up to you.
 
@@ -68,7 +94,7 @@ A very simple `index.html` can look like the following:
 ```
 
 > This is actually the only file required in a DSPLAY HTML template.
-> It's possible, however unrecommended, to have a template with only the `index.html` file.
+> It's possible, although not recommended, to have a template with only the `index.html` file.
 
 ## `dsplay-data.js`
 
@@ -92,8 +118,30 @@ The following pages show in details the fields of `dsplay_data.js` objects:
 - [`dsplay_media`](./dsplay_media)
 - [`dsplay_template`](./dsplay_template)
 
+## Testing
+
+The easiest way to check how your template renders in the real devices (or Android emulator) is serving your HTML through some static HTTP server 
+(e.g. [serve](https://www.npmjs.com/package/serve), [apache](https://httpd.apache.org/), etc) and creating a [Web Site](https://manager.dsplay.tv/media/createWebsite) media on the Web Manager pointing to your local address.
+
+In this way, you will be able to see how your template behaves on real devices.
+
+> Ideally, your device should have an [ADB connection](https://developer.android.com/studio/command-line/adb) with your PC. This helps debugging and managing the native browser limitations. 
+
 ## Packing
 
 To upload your template to the [DSPLAY Web Manager](https://manager.dsplay.tv) you must pack all your files in a `.zip` file.
 
 > **IMPORTANT:** When zipping your template, the `index.html` file must be located in the root of the `.zip` file, not inside any folder.
+
+## Deploying
+
+To deploy your template, just [create](https://manager.dsplay.tv/template/create) (or edit) a template in the Web Manager.
+
+1. Choose the media type your template applies for;
+1. Give your template a name;
+1. Choose your `.zip` file;
+1. Check the responsive option (it will be default soon);
+1. If your template define custom variables, you must register them clicking at the **'Add'** button in **'Template Vars'** region;
+1. Confirm by clicking **'Create'**.
+
+Done! Your template is available for use.

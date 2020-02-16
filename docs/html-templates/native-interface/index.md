@@ -1,5 +1,5 @@
 ---
-parent: DSPLAY HTML Templates
+parent: HTML Templates
 nav_order: 6
 ---
 # Native Interface (beta)

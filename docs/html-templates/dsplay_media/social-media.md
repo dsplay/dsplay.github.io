@@ -1,6 +1,6 @@
 ---
 parent: dsplay_media
-grand_parent: DSPLAY HTML Templates
+grand_parent: HTML Templates
 nav_order: 3
 ---
 # Social Media
@@ -30,7 +30,7 @@ var dsplay_media = {
               urls: { // paths to media images
                 tb: "/path/to/thumbnail",
                 sm: "/path/to/small",
-                md: "/path/medium",
+                md: "/path/to/medium",
                 lg: "/path/to/large"
               }
             }

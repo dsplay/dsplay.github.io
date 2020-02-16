@@ -1,6 +1,6 @@
 ---
 nav_order: 2
-parent: DSPLAY HTML Templates
+parent: HTML Templates
 title: dsplay_media
 has_children: true
 ---

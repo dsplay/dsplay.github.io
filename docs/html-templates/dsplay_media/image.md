@@ -1,6 +1,6 @@
 ---
 parent: dsplay_media
-grand_parent: DSPLAY HTML Templates
+grand_parent: HTML Templates
 nav_order: 1
 ---
 # Image Media
