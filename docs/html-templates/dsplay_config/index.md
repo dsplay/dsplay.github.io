@@ -10,7 +10,7 @@ Follow the fields available in `dsplay_config` with some sample values.
 
 ```js
 var dsplay_config = {
-  orientation = 'landscape', // 'landscape' or 'portrait'
+  orientation: 'landscape', // 'landscape' or 'portrait'
   width: 1280, // Screen width of device
   height: 720, // Screen height of device
   os: 'android', // for future use
