@@ -15,7 +15,7 @@ has_toc: false
 
 ## What is an HTML Template?
 
-A **HTML template** is the piece of software responsible for rendering the content of your media in your screen.
+An **HTML template** is the piece of software responsible for rendering the content of your media in your screen.
 
 In DSPLAY, most of media types can have its layout and presentation customized. 
 You can change colors, fonts, images, add your brand, and totally redefine the way a media will be displayed.
