@@ -13,7 +13,7 @@ has_toc: false
 1. TOC
 {:toc}
 
-## What is a HTML Template?
+## What is an HTML Template?
 
 A **HTML template** is the piece of software responsible for rendering the content of your media in your screen.
 
