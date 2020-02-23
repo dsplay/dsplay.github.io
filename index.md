@@ -2,9 +2,9 @@
 title: Home
 nav_order: 1
 ---
-# DSPLAY Developers
+# DSPLAY for Developers
 
-Welcome to **DSPLAY Developers' website**
+Welcome to **DSPLAY Developers'** website
 
 Here you will find the necessary resources to extend the functionalities and customize your experience with the [DSPLAY - Digital Signage](https://dsplay.tv) platform.
 
