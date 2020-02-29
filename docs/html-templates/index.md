@@ -113,7 +113,7 @@ var dsplay_template = {};
 > During template development, `dsplay-data.js` will be just a mock with your test data. The DSPLAY Player App will automatically replace this file with real content at runtime.
 
 
-The following pages show in details the fields of `dsplay_data.js` objects:
+The following pages show in detail the fields of `dsplay-data.js` objects:
 - [`dsplay_config`](./dsplay_config)
 - [`dsplay_media`](./dsplay_media)
 - [`dsplay_template`](./dsplay_template)
