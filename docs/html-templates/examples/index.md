@@ -14,3 +14,7 @@ Follows the list of DSPLAY official templates source code:
 - <a href="https://github.com/dsplay/template-instagram-basic" target="_blank">Instagram</a>
 - <a href="https://github.com/dsplay/template-instagram-image-only" target="_blank">Instagram (Image Only)</a>
 - <a href="https://github.com/dsplay/template-twitter-basic" target="_blank">Twitter</a>
+- <a href="https://github.com/dsplay/template-image" target="_blank">Image</a>
+- <a href="https://github.com/dsplay/template-weather-forecast" target="_blank">Weather Forecast</a>
+- <a href="https://github.com/dsplay/template-world-clocks-analog" target="_blank">World Clocks (analog)</a>
+- <a href="https://github.com/dsplay/template-photo-collage" target="_blank">Photo Collage</a>
