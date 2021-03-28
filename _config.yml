@@ -9,6 +9,7 @@ remote_theme: pmarsceill/just-the-docs
 logo: "/assets/images/dsplay-logo.png"
 
 # color_scheme: "dark"
+color_scheme: dsplay
 
 aux_links:
   "DSPLAY - Digital Signage":
