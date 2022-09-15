@@ -34,7 +34,7 @@ npm i -S @dsplay/react-template-utils@4
 
 It's time to start using them.
 
-To make the changes on your template follow this simple steps:
+To make the changes on your template follow these simple steps:
 
 1. Add the SDK corresponding to your project type (React or Javascript/JQuery)
 1. Search for uses of `window.dsplay_media`, `window.dsplay_config` and `window.dsplay_template` and replace them by the SDK-provided functions.
