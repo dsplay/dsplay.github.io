@@ -25,7 +25,7 @@ If your project doesn't use a package manager, just download the UMD version fro
 In this case you just need to upgrade the SDK to the [latest version](https://www.npmjs.com/package/@dsplay/react-template-utils).
 
 ```bash
-npm i @dsplay/react-template-utils@4
+npm i -S @dsplay/react-template-utils@4
 ```
 
 > Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](manager.dsplay.tv)
