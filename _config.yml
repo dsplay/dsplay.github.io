@@ -1,4 +1,5 @@
 title: DSPLAY Developers' Site
+heading_anchors: true
 
 plugins:
   - jekyll-remote-theme
