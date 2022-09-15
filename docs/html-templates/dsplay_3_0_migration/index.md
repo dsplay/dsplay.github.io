@@ -37,22 +37,32 @@ It's time to start using them.
 To make the changes on your template follow these simple steps:
 
 1. Add the SDK corresponding to your project type (React or Javascript/JQuery)
-1. Search for uses of `window.dsplay_media`, `window.dsplay_config` and `window.dsplay_template` and replace them by the SDK-provided functions.
+1. Search for uses of `window.dsplay_media`, `window.dsplay_config` and `window.dsplay_template` and replace them by the SDK-provided functions/objects.
     1. Javascript/jQuery
         ```js
         // replace this
-        var someValue = window.dsplay_media.images;
+        var someMediaValue = window.dsplay_media.images;
+        
+        var someTemplateValue = window.dsplay_template.bg_color;
 
         // for this
-        var someValue = dsplayTemplateUtils.media.images;
+        var someMediaValue = dsplayTemplateUtils.media.images;
+
+        var someTemplateValue = dsplayTemplateUtils.tval('bg_color');
         ```
     1. React
         ```js
         // replace this
-        const someValue = window.dsplay_media.images;
+        const someMediaValue = window.dsplay_media.images;
+
+        const someTemplateValue = window.dsplay_template.bg_color;
 
         // for this
-        var someValue = useMedia().images;
+        const media = useMedia();
+
+        const someMediaValue = media.images;
+
+        const someTemplateValue = useTemplateVal('bg_color');
 
         ```
 
