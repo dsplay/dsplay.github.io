@@ -42,28 +42,22 @@ To make the changes on your template follow these simple steps:
         ```js
         // replace this
         var someMediaValue = window.dsplay_media.images;
-        
         var someTemplateValue = window.dsplay_template.bg_color;
 
         // for this
         var someMediaValue = dsplayTemplateUtils.media.images;
-
         var someTemplateValue = dsplayTemplateUtils.tval('bg_color');
         ```
     1. React
         ```js
         // replace this
         const someMediaValue = window.dsplay_media.images;
-
         const someTemplateValue = window.dsplay_template.bg_color;
 
         // for this
         const media = useMedia();
-
         const someMediaValue = media.images;
-
         const someTemplateValue = useTemplateVal('bg_color');
-
         ```
 
 > You can always check the [boilerplate projects](../boilerplates/) to see how to use the SDK in more detail.
