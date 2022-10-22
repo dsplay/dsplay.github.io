@@ -4,21 +4,6 @@ nav_order: 4
 ---
 # DSPLAY 3.x migration guide
 
-## My template uses `@dsplay/template-utils` SDK
-
-In this case you just need to upgrade the SDK to the [latest version](https://www.npmjs.com/package/@dsplay/template-utils).
-
-### with a package manager
-If your project uses npm (or similar) just run:
-
-```bash
-npm update
-```
-
-### without a package manager
-If your project doesn't use a package manager, just download the UMD version from <https://unpkg.com/@dsplay/template-utils> and replace your local file.
-
-> Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](manager.dsplay.tv)
 
 ## My template uses `@dsplay/react-template-utils` SDK
 
@@ -27,6 +12,22 @@ In this case you just need to upgrade the SDK to the [latest version](https://ww
 ```bash
 npm i -S @dsplay/react-template-utils@4
 ```
+
+> Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](manager.dsplay.tv)
+
+## My template uses `@dsplay/template-utils` SDK
+
+In this case you just need to upgrade the SDK to the [latest version](https://www.npmjs.com/package/@dsplay/template-utils).
+
+### with a package manager
+If your project uses npm just run:
+
+```bash
+npm update
+```
+
+### without a package manager
+If your project doesn't use a package manager, just download the UMD version from <https://unpkg.com/@dsplay/template-utils> and replace your local file.
 
 > Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](manager.dsplay.tv)
 
@@ -44,7 +45,7 @@ To make the changes on your template follow these simple steps:
         var someMediaValue = window.dsplay_media.images;
         var someTemplateValue = window.dsplay_template.bg_color;
 
-        // for this
+        // by this
         var someMediaValue = dsplayTemplateUtils.media.images;
         var someTemplateValue = dsplayTemplateUtils.tval('bg_color');
         ```
@@ -54,7 +55,7 @@ To make the changes on your template follow these simple steps:
         const someMediaValue = window.dsplay_media.images;
         const someTemplateValue = window.dsplay_template.bg_color;
 
-        // for this
+        // by this
         const media = useMedia();
         const someMediaValue = media.images;
         const someTemplateValue = useTemplateVal('bg_color');
