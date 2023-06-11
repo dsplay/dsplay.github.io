@@ -270,8 +270,8 @@ You must send an `HTTP POST` request like the following:
       "active": false,
       "activationCode": "64775e8f5b989",
       "activationLinks": [
-        "http:\/\/ds.myawesomecompany.com\/user\/activate?email=pcmnac5%40gmail.com&activationCode=64775e8f5b989",
-        "https:\/\/manager.dsplay.tv\/user\/activate?email=pcmnac5%40gmail.com&activationCode=64775e8f5b989"
+        "http:\/\/ds.myawesomecompany.com\/user\/activate?email=manager%40achildaccount.com&activationCode=64775e8f5b989",
+        "https:\/\/manager.dsplay.tv\/user\/activate?email=manager%40achildaccount.com&activationCode=64775e8f5b989"
       ]
     }
   }
