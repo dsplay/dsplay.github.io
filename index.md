@@ -13,4 +13,5 @@ Here you will find the necessary resources to extend the functionalities and cus
 {: .no_toc .text-delta }
 
 - [HTML Templates](./docs/html-templates)
+- [Partners](./docs/partners)
 - [JSON Services](./docs/json-services)
