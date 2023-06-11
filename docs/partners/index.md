@@ -19,10 +19,13 @@ A **DSPLAY Partner** is a special kind of customer which can have other customer
 
 The partner account has admin-like privileges over its children accounts. It can:
 - Set the maximum allowed terminals of its children
+- Set the maximum storage space its children can use
 - Enable/disable child accounts
 - Manage users in its children account
 - Has its own registration page for customers
 
-> Partners accounts are charged by the total of active terminals, QR Codes and any other kind of billed resource used by their children.
+## Billing
 
->DSPLAY doesn't impose any restrictions on the partners pricing model.
+Partners accounts are charged by the total of active terminals, extra-storage used, QR Codes and any other kind of billable resource used by their children.
+
+>DSPLAY doesn't impose any restrictions on the partners pricing model for their customers.
