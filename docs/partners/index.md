@@ -22,7 +22,7 @@ The partner account has admin-like privileges over its children accounts. It can
 - Set the maximum storage space its children can use
 - Enable/disable child accounts
 - Manage users in its children account
-- Has its own registration page for customers
+- Has its own registration page for customers. See details [here](./create_children/)
 
 ## Billing
 
