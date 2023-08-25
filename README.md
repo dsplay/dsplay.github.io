@@ -8,7 +8,7 @@ gem install jekyll bundler
 
 prepare
 ```bash
-/bin/bash --login`
+/bin/bash --login
 source ~/.bashrc
 rvm use 2.7
 ```

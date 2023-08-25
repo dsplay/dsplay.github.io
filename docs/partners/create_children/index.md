@@ -10,6 +10,10 @@ As an official DSPLAY partner, you can register child accounts straight from you
 
 ![Flow](./assets/flow.jpg)
 
+>**IMPORTANT!**
+>
+>The `/createChildAccount` request have to be ALWAYS DONE FROM A BACK-END service because the `projectKey` cannot be exposed on the UI. 
+
 ## Endpoint URL
 
 If you are an official DSPLAY partner you can see in your project info view the URL you can use to register child accounts.
@@ -20,6 +24,14 @@ https://manager.dsplay.tv/project/createChildAccount/<your_project_key>
 ```
 
 ## Request
+
+### Headers
+
+- **`Accept-Language`**
+  - description: The language you want to use to get the validation error messages.
+  - required: `false`
+  - The current supported values are `en_us` (default) and `pt_br`
+
 
 ### Example
 
@@ -43,6 +55,7 @@ You must send an `HTTP POST` request like the following:
   },
   "billingInfo": {
     "accountType": "personal|business",
+    "birthDate": "1980-01-01T00:00:00Z",
     "taxId": "<your tax id>",
     "email": "main@myawesomecompany.com",
     "phone": "+55 22 222 222 222",
@@ -62,7 +75,7 @@ You must send an `HTTP POST` request like the following:
     }
   },
   "user": {
-    "name": "Your Main User Name",
+    "name": "Child Company's Main Username",
     "email": "manager@achildaccount.com",
     "username": "manager",
     "password": "v3ry5tr0ngp455w0rd"
@@ -118,6 +131,9 @@ You must send an `HTTP POST` request like the following:
   - `accountType` (`string`)
     - required: `true`
     - description: The account type. Valid values are `personal` or `business`.
+  - `birthDate` (`string`)
+    - required: `true` for `personal` account type
+    - description: The account holder birth date. Must be in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format.
   - `taxId` (`string`)
     - required: `true`
     - description: The account tax ID.
@@ -161,16 +177,16 @@ You must send an `HTTP POST` request like the following:
   - **`user`** (`object`)
     - `name` (`string`)
       - required: `true`
-      - description: The name of the account's main user.
+      - description: The name of the child company account's main user.
     - `email` (`string`)
       - required: `true`
-      - description: The e-mail of the account's main user.
+      - description: The e-mail of the child company account's main user.
     - `username` (`string`)
       - required: `true`
-      - description: The username of the account's main user.
+      - description: The username of the child company account's main user.
     - `password` (`string`)
       - required: `true`
-      - description: The password of the account's main user.
+      - description: The password of the child company account's main user.
   - **`settings`** (`object`)
     - `timezone` (`string`)
       - required: `true`

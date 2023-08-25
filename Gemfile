@@ -13,6 +13,7 @@ gem "github-pages", group: :jekyll_plugins
 # gem "just-the-docs"
 
 gem "jekyll-remote-theme"
+gem "jekyll-include-cache"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
