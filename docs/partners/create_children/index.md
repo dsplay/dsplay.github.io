@@ -75,7 +75,7 @@ You must send an `HTTP POST` request like the following:
     }
   },
   "user": {
-    "name": "Child Company's Main Username",
+    "name": "Child Company's Main User Name",
     "email": "manager@achildaccount.com",
     "username": "manager",
     "password": "v3ry5tr0ngp455w0rd"
@@ -258,9 +258,9 @@ You must send an `HTTP POST` request like the following:
     },
     "billingInfo": {
       "accountType": "personal",
-      "taxId": "04343650413",
+      "taxId": "<your tax id>",
       "email": "main@achildaccount.com",
-      "phone": "+351 910 626 924",
+      "phone": "+55 22 222 222 222",
       "address": {
         "address": "Another Address",
         "number": "5",
@@ -279,7 +279,7 @@ You must send an `HTTP POST` request like the following:
     },
     "user": {
       "id": 25,
-      "name": "Your Main User Name",
+      "name": "Child Company's Main User Name",
       "email": "manager@achildaccount.com",
       "username": "manager",
       "registration": "2023-05-31T00:00:00+00:00",
