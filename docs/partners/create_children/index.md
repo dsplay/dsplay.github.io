@@ -78,7 +78,8 @@ You must send an `HTTP POST` request like the following:
     "name": "Child Company's Main User Name",
     "email": "manager@achildaccount.com",
     "username": "manager",
-    "password": "v3ry5tr0ngp455w0rd"
+    "password": "v3ry5tr0ngp455w0rd",
+    "active": true
   },
   "settings": {
     "timezone": "America/Recife",
@@ -187,6 +188,9 @@ You must send an `HTTP POST` request like the following:
     - `password` (`string`)
       - required: `true`
       - description: The password of the child company account's main user.
+    - `active` (`boolean`)
+      - description: If the user will be active or not after it's creation.
+      - default: `false`
   - **`settings`** (`object`)
     - `timezone` (`string`)
       - required: `true`
