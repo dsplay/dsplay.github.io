@@ -65,7 +65,8 @@ You must send an `HTTP POST` request like the following:
       "city": "Another City",
       "state": "Another State",
       "countryCode": "br",
-      "postalCode": "22222-222"
+      "postalCode": "22222-222",
+      "addressExtra": "Another Neighborhood",
     },
     "payment": {
       "method": "bank-slip|booklet|payment-link|subscription|credit-card|bank-transfer",
@@ -157,6 +158,9 @@ You must send an `HTTP POST` request like the following:
       - description: The billing address country code in case it differs of the company's one. It must be a valid [ISO-3166 2-alpha](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) country code
     - `postalCode` (`string`)
       - description: The billing address postal code in case it differs of the company's one
+    - `addressExtra` (`string`)
+      - required: `true` if `countryCode` is `br`
+      - description: The billing address neighborhood
   - `payment` (`object`)
     - `method` (`string`)
       - required: `true`
@@ -273,6 +277,7 @@ You must send an `HTTP POST` request like the following:
         "countryCode": "br",
         "country": "Brazil",
         "postalCode": "22222-222",
+        "addressExtra": "Another Neighborhood",
       },
       "payment": {
         "method": "bank-slip",
