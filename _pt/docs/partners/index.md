@@ -25,6 +25,12 @@ A conta do parceiro tem privilégios de administrador sobre as contas filhas. El
 - Gerenciar usuários nas contas filhas
 - Ter uma página de cadastro própria para clientes. Veja os detalhes [aqui](./create_children/)
 
+## API do DSPLAY para parceiros
+
+Como parceiro, você pode integrar os seus sistemas com o DSPLAY. A API de [Cadastro personalizado](./create_children/) registra contas filhas direto do seu site, e cada uma é vinculada à sua conta imediatamente.
+
+<figure class="fig"><img src="{{ '/docs/partners/create_children/assets/flow.jpg' | relative_url }}" alt="Um usuário preenche um formulário de cadastro no site do parceiro, o servidor do parceiro chama POST /createChildAccount no servidor do DSPLAY e envia um e-mail de confirmação"><figcaption>O fluxo de cadastro.</figcaption></figure>
+
 ## Cobrança
 
 As contas de parceiros são cobradas pelo total de terminais ativos, armazenamento extra usado, QR Codes e qualquer outro tipo de recurso cobrável usado por seus filhos.

@@ -7,9 +7,7 @@ has_children: true
 
 Any data you can reach over HTTP can be on a DSPLAY screen. A JSON Service is the whole integration: an endpoint that returns JSON, and a [template](../html-templates) that renders it.
 
-```
-your data  →  your endpoint  →  DSPLAY player  →  your template  →  the screen
-```
+<figure class="fig"><img src="{{ '/assets/images/diagrams/json-flow.en.svg' | relative_url }}" alt="Your data, your endpoint, the DSPLAY player, your template, the screen"></figure>
 
 Stock levels, queue numbers, sales dashboards, sensor readings, an internal API: if you can return it as JSON, you can show it. Your service doesn't depend on DSPLAY, it only adds a couple of control fields to its JSON.
 

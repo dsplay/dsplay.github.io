@@ -61,14 +61,24 @@ O serviço precisa estar acessível pelo player pela internet. Para usar um serv
 
 ## O template
 
-Parta do [boilerplate vanilla JS](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/javascript) (ou do de [React](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/react)). O template lê o `result` da mídia com o [`@dsplay/template-utils`](https://github.com/dsplay/dsplay-templates/tree/main/packages/template-utils):
+Use o HTML e o CSS do cartão de boas-vindas de [Criar um template do zero](../html-templates/create-from-scratch), com uma cor de fundo e uma fonte maior no `styles/main.css`:
+
+```css
+#root {
+  background-color: #0a57fe;
+  color: #ffffff;
+  font-size: 4em;
+}
+```
+
+No `scripts/app.js`, o template lê o `result` da mídia com o [`@dsplay/template-utils`](https://github.com/dsplay/dsplay-templates/tree/main/packages/template-utils):
 
 ```js
 var u = dsplayTemplateUtils;
+var data = u.media.result.data; // a resposta do serviço
 
-var data = u.media.result.data;
-
-document.querySelector('.title').innerHTML = data.greeting;
+document.querySelector('.message').textContent = data.greeting;
+document.querySelector('#root').style.opacity = 1; // o boilerplate esconde o #root até você exibi-lo
 ```
 
 Para desenvolver localmente, simule a resposta do serviço em `scripts/dsplay-data.js`. Em produção, o player a substitui pela resposta real:
@@ -77,7 +87,7 @@ Para desenvolver localmente, simule a resposta do serviço em `scripts/dsplay-da
 var dsplay_media = {
   duration: 15000,
 
-  // Específico do JSON Service
+  // específico do JSON Service
   result: {
     expiresAt: '2030-01-01T00:00:00.000Z',
     showOutdated: true,
@@ -88,6 +98,8 @@ var dsplay_media = {
   },
 };
 ```
+
+<figure class="fig"><img src="{{ '/assets/images/guides/json-greeting.pt.jpg' | relative_url }}" alt="O template exibindo a saudação vinda do serviço"><figcaption>O template renderizando a resposta do serviço.</figcaption></figure>
 
 ## Como usar
 

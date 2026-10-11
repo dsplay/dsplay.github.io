@@ -59,14 +59,24 @@ The service must be reachable by the player over the internet. To use a service 
 
 ## The template
 
-Start from the [vanilla JS boilerplate](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/javascript) (or the [React](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/react) one). The template reads `result` from the media with [`@dsplay/template-utils`](https://github.com/dsplay/dsplay-templates/tree/main/packages/template-utils):
+Use the HTML and CSS of the welcome card from [Create a template from scratch](../html-templates/create-from-scratch), with a background color and a bigger font in `styles/main.css`:
+
+```css
+#root {
+  background-color: #0a57fe;
+  color: #ffffff;
+  font-size: 4em;
+}
+```
+
+In `scripts/app.js`, the template reads `result` from the media with [`@dsplay/template-utils`](https://github.com/dsplay/dsplay-templates/tree/main/packages/template-utils):
 
 ```js
 var u = dsplayTemplateUtils;
+var data = u.media.result.data; // the service response
 
-var data = u.media.result.data;
-
-document.querySelector('.title').innerHTML = data.greeting;
+document.querySelector('.message').textContent = data.greeting;
+document.querySelector('#root').style.opacity = 1; // the boilerplate hides #root until you show it
 ```
 
 To develop it locally, mock the service response in `scripts/dsplay-data.js`. In production the player replaces it with the real one:
@@ -86,6 +96,8 @@ var dsplay_media = {
   },
 };
 ```
+
+<figure class="fig"><img src="{{ '/assets/images/guides/json-greeting.jpg' | relative_url }}" alt="The template showing the greeting from the service"><figcaption>The template rendering the service response.</figcaption></figure>
 
 ## Using it
 

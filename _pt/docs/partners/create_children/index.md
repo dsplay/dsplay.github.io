@@ -10,7 +10,7 @@ Como parceiro oficial da DSPLAY, você pode cadastrar contas filhas direto do se
 
 ## Fluxo de cadastro personalizado
 
-![Flow](./assets/flow.jpg)
+![Flow]({{ '/docs/partners/create_children/assets/flow.jpg' | relative_url }})
 
 >**IMPORTANTE!**
 >

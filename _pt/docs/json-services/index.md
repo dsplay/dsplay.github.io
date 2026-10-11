@@ -8,9 +8,7 @@ permalink: /pt/docs/json-services/
 
 Qualquer dado acessível por HTTP pode estar numa tela DSPLAY. Um Serviço JSON é a integração inteira: um endpoint que retorna JSON e um [template](../html-templates) que o renderiza.
 
-```
-seus dados  →  seu endpoint  →  player DSPLAY  →  seu template  →  a tela
-```
+<figure class="fig"><img src="{{ '/assets/images/diagrams/json-flow.pt.svg' | relative_url }}" alt="Seus dados, seu endpoint, o player DSPLAY, seu template, a tela"></figure>
 
 Níveis de estoque, números de fila, painéis de vendas, leituras de sensores, uma API interna: se dá para retornar como JSON, dá para exibir. Seu serviço não depende do DSPLAY, ele só acrescenta alguns campos de controle ao JSON.
 

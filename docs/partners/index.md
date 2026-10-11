@@ -24,6 +24,12 @@ The partner account has admin-like privileges over its children accounts. It can
 - Manage users in its children account
 - Has its own registration page for customers. See details [here](./create_children/)
 
+## DSPLAY API for partners
+
+As a partner, you can integrate your own systems with DSPLAY. The [Custom Registration](./create_children/) API registers child accounts straight from your website, and each one is attached to your account right away.
+
+<figure class="fig"><img src="{{ '/docs/partners/create_children/assets/flow.jpg' | relative_url }}" alt="A user fills a registration form on the partner website, the partner server calls POST /createChildAccount on the DSPLAY server and sends a confirmation e-mail"><figcaption>The registration flow.</figcaption></figure>
+
 ## Billing
 
 Partners accounts are charged by the total of active terminals, extra-storage used, QR Codes and any other kind of billable resource used by their children.
