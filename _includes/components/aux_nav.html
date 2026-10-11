@@ -1,0 +1,20 @@
+<nav aria-label="Auxiliary" class="aux-nav">
+  <ul class="aux-nav-list">
+    {% if page.lang == 'pt' %}
+      <li class="aux-nav-list-item"><a href="{{ page.url | remove_first: '/pt' | relative_url }}" class="site-button">English</a></li>
+    {% else %}
+      <li class="aux-nav-list-item"><a href="{{ page.url | prepend: '/pt' | relative_url }}" class="site-button">Português</a></li>
+    {% endif %}
+    {% for link in site.aux_links %}
+      <li class="aux-nav-list-item">
+        <a href="{{ link.last }}" class="site-button"
+          {% if site.aux_links_new_tab %}
+          target="_blank" rel="noopener noreferrer"
+          {% endif %}
+        >
+          {{ link.first }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -5,6 +5,24 @@ plugins:
   - jekyll-remote-theme
 
 remote_theme: pmarsceill/just-the-docs
+
+# Portuguese version: pages in _pt/, served under /pt (see AGENTS.md)
+collections:
+  pt:
+    output: true
+
+just_the_docs:
+  collections:
+    pt:
+      name: Português
+
+defaults:
+  - scope:
+      path: ""
+      type: pt
+    values:
+      layout: default
+      lang: pt
 # theme: just-the-docs
 
 logo: "/assets/images/dsplay-logo.png"
@@ -17,3 +35,7 @@ aux_links:
     - "https://dsplay.tv"
 
 footer_content: "Copyright &copy; 2012-2026 DSPLAY - Digital Signage. Distributed by an <a href=\"https://opensource.org/licenses/MIT\">MIT license.</a>"
+
+exclude:
+  - AGENTS.md
+  - docker-compose.yml
