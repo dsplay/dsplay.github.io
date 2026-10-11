@@ -15,7 +15,7 @@ The site is published in English (`index.md`, `docs/`) and Portuguese (`_pt/`, s
 - **Keep both in sync:** every change to a page is made in both versions, in the same commit. Adding, moving or removing a page applies to both.
 - **Portuguese version:** `_pt/` mirrors the English tree. Each page has `permalink: /pt<english url>` and an explicit `title:` (collections don't get titles from the `#` heading). `parent` and `grand_parent` use the Portuguese titles (`Templates HTML`, `Serviços JSON`, `Parceiros`). Keep `nav_order` equal to the English page.
 - **What gets translated:** prose and code comments. Identifiers, keys, protocol values (`'landscape'`, `'wpa'`, ...) and URLs stay as they are. Sample values in code may be in either language.
-- **Menu and switcher:** the sidebar shows only the current language (`_includes/components/site_nav.html`, `sidebar.html`), and `aux_nav.html` adds the language link. These are copies of the theme's files: check them when the theme changes.
+- **Menu, search and switcher:** the theme renders one menu with both languages and `_includes/head_custom.html` hides the other one with CSS. Search is filtered per language in `_includes/lunr/custom-index.js`; the Portuguese placeholder and "no results" text are in `search_placeholder_custom.html` and `js/custom.js`. `components/aux_nav.html` (a copy of the theme's file) adds the language link: check it when the theme changes. Don't filter the menu in `site_nav.html`: the theme's breadcrumbs and children list read the page's own link from it.
 
 ## Running locally
 

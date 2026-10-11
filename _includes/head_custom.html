@@ -3,3 +3,11 @@
 <link rel="icon" href="{{ 'favicon.png' | absolute_url }}" sizes="192x192">
 <link rel="apple-touch-icon-precomposed" href="{{ 'favicon.png' | absolute_url }}">
 <meta name="msapplication-TileImage" content="{{ 'favicon.png' | absolute_url }}">
+{%- comment -%}Show only the current language in the sidebar (the theme renders the pages, then the pt collection){%- endcomment %}
+<style>
+{%- if page.lang == 'pt' %}
+  .site-nav > ul.nav-list:first-child, .site-nav > .nav-category { display: none; }
+{%- else %}
+  .site-nav > .nav-category, .site-nav > .nav-category ~ ul.nav-list { display: none; }
+{%- endif %}
+</style>
