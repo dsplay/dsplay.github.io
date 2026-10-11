@@ -1,4 +1,4 @@
-> IMPORTANT: Use Ruby2.7
+> IMPORTANT: Use Ruby 3.3 (or just use Docker, see below)
 
 install
 
@@ -10,7 +10,7 @@ prepare
 ```bash
 /bin/bash --login
 source ~/.bashrc
-rvm use 2.7
+rvm use 3.3
 ```
 
 run locally
@@ -18,3 +18,9 @@ run locally
 bundle install
 bundle exec jekyll serve
 ```
+
+run locally with Docker (no need to install Ruby)
+```bash
+docker compose up
+```
+Site available at http://localhost:4000

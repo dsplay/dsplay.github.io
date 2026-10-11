@@ -1,0 +1,18 @@
+services:
+  jekyll:
+    image: ruby:3.3
+    container_name: dsplay-jekyll
+    working_dir: /srv/site
+    ports:
+      - "4000:4000"
+    environment:
+      PAGES_REPO_NWO: dsplay/dsplay.github.io
+    volumes:
+      - .:/srv/site
+      - bundle:/usr/local/bundle
+    command: >
+      bash -c "bundle install &&
+      bundle exec jekyll serve --host 0.0.0.0 --force_polling"
+
+volumes:
+  bundle:
