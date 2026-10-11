@@ -1,0 +1,56 @@
+---
+parent: dsplay_media
+grand_parent: HTML Templates
+nav_order: 7
+---
+# Facebook
+
+Used by the [Facebook](https://github.com/dsplay/dsplay-templates/tree/main/templates/facebook-posts) templates. The player downloads the images and rewrites their paths to local ones.
+
+```js
+var dsplay_media = {
+  // All general fields are also included...
+
+  // Facebook specific
+  postCount: 5, // Number of posts requested
+  desiredTags: 'tag1,tag2', // Hashtags the posts are filtered by (empty for all)
+  rawResult: '{...}', // The service response, as a string
+  result: { // The service response, as an object
+    time: '2026-10-11 12:00:00', // When the result was fetched
+    userKey: 'abc123', // Key of the connected account
+    data: {
+      user: {
+        id: '1234567890', // Account ID
+        name: 'DSPLAY - Digital Signage', // Account name
+        pic: '/path/to/profile/picture', // Page picture, local path
+      },
+      posts: [
+        {
+          id: '0987654321', // Post ID
+          text: 'Post text',
+          created: '2018-06-17T17:24:51+0000', // Post creation date
+          link: 'https://www.facebook.com/example/posts/0987654321', // Link to the original post
+          tags: ['myhashtag', 'tag2'], // Post hashtags (may be absent)
+          reactions: { like: 84, love: 52 }, // Reaction counts by type (like, love, wow, haha, ...)
+          shares: 6,
+          comments: 3,
+          media: [ // Post images and videos
+            {
+              id: '1324354657687980', // Media ID
+              type: 'image', // 'image' or 'video'
+              urls: { // Local paths of the image. Only the resolution in use is downloaded
+                tb: '/path/to/thumbnail',
+                sm: '/path/to/small',
+                md: '/path/to/medium',
+                lg: '/path/to/large',
+              },
+            },
+          ],
+        },
+      ],
+    },
+  },
+}
+```
+
+The resolution downloaded is `md`, unless the template's `metadata.json` has a `resolution` key (`tb`, `sm`, `md` or `lg`).
