@@ -122,17 +122,17 @@ DSPLAY has some SDK libraries that helps you to create templates easily. Those l
 
 This is where the magic happens.
 
-[@dsplay/template-utils](https://github.com/dsplay/template-utils) is a pure javascript library that handles the interaction between DSPLAY app and your template. Through this interface your template can get data from DSPLAY app and also send some commands to the app (e.g. completion or error).
+[@dsplay/template-utils](https://github.com/dsplay/dsplay-templates/tree/main/packages/template-utils) is a pure javascript library that handles the interaction between DSPLAY app and your template. Through this interface your template can get data from DSPLAY app and also send some commands to the app (e.g. completion or error).
 
 > The library will automatically detect the environment where your template is running and will get data from the right place. When running on your web browser, [test] data will come from the `dsplay-data.js` file. When running on the DSPLAY Player Android app it will get [real] data from the app.
 
-You can use this SDK in any template, built with [vanilla javascript](https://github.com/dsplay/template-boilerplate-javascript), [jQuery](https://github.com/dsplay/template-boilerplate-jquery) or any other framework.
+You can use this SDK in any template, built with [vanilla javascript](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/javascript), [jQuery](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/jquery) or any other framework.
 
 ### The React SDK
 
-Built on top of the basic SDK, [@dsplay/react-template-utils](https://github.com/dsplay/react-template-utils) provides the same funcionality plus some useful React components and hooks to make you life easier. 
+Built on top of the basic SDK, [@dsplay/react-template-utils](https://github.com/dsplay/dsplay-templates/tree/main/packages/react-template-utils) provides the same funcionality plus some useful React components and hooks to make you life easier. 
 
-If you are building your template with [React](https://github.com/dsplay/template-boilerplate-react), we recommend using this SDK.
+If you are building your template with [React](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/react), we recommend using this SDK.
 
 
 ## Local development: `dsplay-data.js`
