@@ -6,7 +6,9 @@ Public documentation site for DSPLAY, published with GitHub Pages. Jekyll with t
 
 This is a repo for developers. Write succinctly and practically: say what a thing is and how to use it, skip introductions and filler.
 
-The pitch of these docs: customizing a template is simple (it is a web page, and template variables become CMS fields), and so is integrating any data source (a JSON service is one endpoint that returns JSON). Lead with what the developer can do and show it in code or commands; keep every claim verifiable in the code.
+The site serves developers in four cases: (1) building a template from scratch, in any stack that outputs HTML and JavaScript; (2) customizing a system template, with its variables or by copying its source; (3) creating a JSON service to integrate a data source; (4) integrating with the DSPLAY API (partners only). Most media types are rendered by an HTML template (not video, audio, websites or YouTube), and JSON services are just one way to feed one. Lead with what the developer can do and show it in code or commands; keep every claim verifiable in the code, and run the commands of a guide before publishing it.
+
+Images live in `assets/images/`: `templates/` (480px JPG thumbnails of the screenshots in `dsplay-templates`, one per template), `guides/` (screenshots of the guides' results, run from the commands in the guide) and `diagrams/` (SVG; one file per language, `name.en.svg` and `name.pt.svg`, because the text is inside the image). Reference them with `{{ '/assets/images/...' | relative_url }}` inside `<figure class="fig">` (or `.tpl-gallery`, `.fig-pair`) and give every image an `alt`. Pages in `_pt/` can't use paths relative to their own folder: point to the English page's asset with an absolute path. Keep images small.
 
 For `dsplay_media` (and the other objects a template receives), document each field in a code sample, one variable per line with a comment explaining it. The Android player (`../dsplay-players/apps/android`, `player/*/*PlayerExecution.kt`) is the source of truth for which fields exist.
 
