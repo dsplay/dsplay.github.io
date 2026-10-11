@@ -13,7 +13,7 @@ In this case you just need to upgrade the SDK to the [latest version](https://ww
 npm i -S @dsplay/react-template-utils@4
 ```
 
-> Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](manager.dsplay.tv)
+> Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](https://manager.dsplay.tv)
 
 ## My template uses `@dsplay/template-utils` SDK
 
@@ -29,7 +29,7 @@ npm update
 ### without a package manager
 If your project doesn't use a package manager, just download the UMD version from <https://unpkg.com/@dsplay/template-utils> and replace your local file.
 
-> Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](manager.dsplay.tv)
+> Don't forget to [pack](../#packing) and [redeploy](../#deploying) your template on [DSPLAY Web Manager](https://manager.dsplay.tv)
 
 ## My template doesn't use any SDK
 

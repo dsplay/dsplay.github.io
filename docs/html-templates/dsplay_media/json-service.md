@@ -5,6 +5,8 @@ nav_order: 99
 ---
 # JSON Service
 
+How to build a service and a template for it: [JSON Services](../../json-services).
+
 Templates built on it: [Lottery (Brazil)](./lottery-br), [Exchange Rates](./exchange-rates) and [Menu Board](./menuboard).
 
 ```js
