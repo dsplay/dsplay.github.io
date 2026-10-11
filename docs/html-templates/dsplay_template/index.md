@@ -1,6 +1,6 @@
 ---
 parent: HTML Templates
-nav_order: 3
+nav_order: 5
 ---
 # `dsplay_template`
 

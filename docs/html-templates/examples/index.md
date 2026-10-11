@@ -1,38 +1,40 @@
 ---
 parent: HTML Templates
-nav_order: 5
+nav_order: 7
 ---
 # Examples
 
 The fastest way to learn is to read a real template. These are the official ones, all in the [dsplay-templates](https://github.com/dsplay/dsplay-templates) repository: copy one and make it yours.
 
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/alerts" target="_blank">Alerts</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/analog-clock" target="_blank">Analog Clock</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/bcb-exchange-rates" target="_blank">BCB Exchange Rates</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/building-directions-board" target="_blank">Building Directions Board</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/chamador-loterias-caixa" target="_blank">Chamador Loterias Caixa</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/count-up" target="_blank">Count Up</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/countdown" target="_blank">Countdown</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/digital-clock-basic" target="_blank">Digital Clock</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/facebook-posts" target="_blank">Facebook Posts</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/flight-information" target="_blank">Flight Information</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/horizontal-info-bar" target="_blank">Horizontal Info Bar</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/hotel-rates" target="_blank">Hotel Rates</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/image" target="_blank">Image</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/instagram-basic" target="_blank">Instagram</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/instagram-image-only" target="_blank">Instagram (Image Only)</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/lottery-br-caixa-economica-federal" target="_blank">Lottery (Caixa Econômica Federal - Brazil)</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/meeting-room" target="_blank">Meeting Room</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/menuboard" target="_blank">Menu Board</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/menuboard-featured-products" target="_blank">Menu Board (Featured Products)</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/menuboard-standard" target="_blank">Menu Board (Standard)</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/photo-collage" target="_blank">Photo Collage</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/rss" target="_blank">RSS</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/simple-calendar" target="_blank">Simple Calendar</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/skitter-slider" target="_blank">Skitter Slider</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/tide-sheet" target="_blank">Tide Sheet</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/twitter-basic" target="_blank">Twitter</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/voice-ai" target="_blank">Voice AI</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/weather-forecast" target="_blank">Weather Forecast</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/qrcode-wifi" target="_blank">Wi-Fi QR Code</a>
-- <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/world-clocks-analog" target="_blank">World Clocks (analog)</a>
+<ul class="tpl-gallery">
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/alerts" target="_blank"><img src="{{ '/assets/images/templates/alerts.jpg' | relative_url }}" alt="Screenshot of the Alerts template" loading="lazy"><span>Alerts</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/analog-clock" target="_blank"><img src="{{ '/assets/images/templates/analog-clock.jpg' | relative_url }}" alt="Screenshot of the Analog Clock template" loading="lazy"><span>Analog Clock</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/bcb-exchange-rates" target="_blank"><img src="{{ '/assets/images/templates/bcb-exchange-rates.jpg' | relative_url }}" alt="Screenshot of the BCB Exchange Rates template" loading="lazy"><span>BCB Exchange Rates</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/building-directions-board" target="_blank"><img src="{{ '/assets/images/templates/building-directions-board.jpg' | relative_url }}" alt="Screenshot of the Building Directions Board template" loading="lazy"><span>Building Directions Board</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/chamador-loterias-caixa" target="_blank"><img src="{{ '/assets/images/templates/chamador-loterias-caixa.jpg' | relative_url }}" alt="Screenshot of the Chamador Loterias Caixa template" loading="lazy"><span>Chamador Loterias Caixa</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/count-up" target="_blank"><img src="{{ '/assets/images/templates/count-up.jpg' | relative_url }}" alt="Screenshot of the Count Up template" loading="lazy"><span>Count Up</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/countdown" target="_blank"><img src="{{ '/assets/images/templates/countdown.jpg' | relative_url }}" alt="Screenshot of the Countdown template" loading="lazy"><span>Countdown</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/digital-clock-basic" target="_blank"><img src="{{ '/assets/images/templates/digital-clock-basic.jpg' | relative_url }}" alt="Screenshot of the Digital Clock template" loading="lazy"><span>Digital Clock</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/facebook-posts" target="_blank"><img src="{{ '/assets/images/templates/facebook-posts.jpg' | relative_url }}" alt="Screenshot of the Facebook Posts template" loading="lazy"><span>Facebook Posts</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/flight-information" target="_blank"><img src="{{ '/assets/images/templates/flight-information.jpg' | relative_url }}" alt="Screenshot of the Flight Information template" loading="lazy"><span>Flight Information</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/horizontal-info-bar" target="_blank"><img src="{{ '/assets/images/templates/horizontal-info-bar.jpg' | relative_url }}" alt="Screenshot of the Horizontal Info Bar template" loading="lazy"><span>Horizontal Info Bar</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/hotel-rates" target="_blank"><img src="{{ '/assets/images/templates/hotel-rates.jpg' | relative_url }}" alt="Screenshot of the Hotel Rates template" loading="lazy"><span>Hotel Rates</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/image" target="_blank"><img src="{{ '/assets/images/templates/image.jpg' | relative_url }}" alt="Screenshot of the Image template" loading="lazy"><span>Image</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/instagram-basic" target="_blank"><img src="{{ '/assets/images/templates/instagram-basic.jpg' | relative_url }}" alt="Screenshot of the Instagram template" loading="lazy"><span>Instagram</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/instagram-image-only" target="_blank"><img src="{{ '/assets/images/templates/instagram-image-only.jpg' | relative_url }}" alt="Screenshot of the Instagram (Image Only) template" loading="lazy"><span>Instagram (Image Only)</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/lottery-br-caixa-economica-federal" target="_blank"><img src="{{ '/assets/images/templates/lottery-br-caixa-economica-federal.jpg' | relative_url }}" alt="Screenshot of the Lottery (Caixa Econômica Federal - Brazil) template" loading="lazy"><span>Lottery (Caixa Econômica Federal - Brazil)</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/meeting-room" target="_blank"><img src="{{ '/assets/images/templates/meeting-room.jpg' | relative_url }}" alt="Screenshot of the Meeting Room template" loading="lazy"><span>Meeting Room</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/menuboard" target="_blank"><img src="{{ '/assets/images/templates/menuboard.jpg' | relative_url }}" alt="Screenshot of the Menu Board template" loading="lazy"><span>Menu Board</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/menuboard-featured-products" target="_blank"><img src="{{ '/assets/images/templates/menuboard-featured-products.jpg' | relative_url }}" alt="Screenshot of the Menu Board (Featured Products) template" loading="lazy"><span>Menu Board (Featured Products)</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/menuboard-standard" target="_blank"><img src="{{ '/assets/images/templates/menuboard-standard.jpg' | relative_url }}" alt="Screenshot of the Menu Board (Standard) template" loading="lazy"><span>Menu Board (Standard)</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/photo-collage" target="_blank"><img src="{{ '/assets/images/templates/photo-collage.jpg' | relative_url }}" alt="Screenshot of the Photo Collage template" loading="lazy"><span>Photo Collage</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/rss" target="_blank"><img src="{{ '/assets/images/templates/rss.jpg' | relative_url }}" alt="Screenshot of the RSS template" loading="lazy"><span>RSS</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/simple-calendar" target="_blank"><img src="{{ '/assets/images/templates/simple-calendar.jpg' | relative_url }}" alt="Screenshot of the Simple Calendar template" loading="lazy"><span>Simple Calendar</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/skitter-slider" target="_blank"><img src="{{ '/assets/images/templates/skitter-slider.jpg' | relative_url }}" alt="Screenshot of the Skitter Slider template" loading="lazy"><span>Skitter Slider</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/tide-sheet" target="_blank"><img src="{{ '/assets/images/templates/tide-sheet.jpg' | relative_url }}" alt="Screenshot of the Tide Sheet template" loading="lazy"><span>Tide Sheet</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/twitter-basic" target="_blank"><img src="{{ '/assets/images/templates/twitter-basic.jpg' | relative_url }}" alt="Screenshot of the Twitter template" loading="lazy"><span>Twitter</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/voice-ai" target="_blank"><img src="{{ '/assets/images/templates/voice-ai.jpg' | relative_url }}" alt="Screenshot of the Voice AI template" loading="lazy"><span>Voice AI</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/weather-forecast" target="_blank"><img src="{{ '/assets/images/templates/weather-forecast.jpg' | relative_url }}" alt="Screenshot of the Weather Forecast template" loading="lazy"><span>Weather Forecast</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/qrcode-wifi" target="_blank"><img src="{{ '/assets/images/templates/qrcode-wifi.jpg' | relative_url }}" alt="Screenshot of the Wi-Fi QR Code template" loading="lazy"><span>Wi-Fi QR Code</span></a></li>
+<li><a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/world-clocks-analog" target="_blank"><img src="{{ '/assets/images/templates/world-clocks-analog.jpg' | relative_url }}" alt="Screenshot of the World Clocks (analog) template" loading="lazy"><span>World Clocks (analog)</span></a></li>
+</ul>

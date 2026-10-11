@@ -1,6 +1,6 @@
 ---
 parent: Templates HTML
-nav_order: 4
+nav_order: 8
 permalink: /pt/docs/html-templates/dsplay_3_0_migration/
 title: Guia de migração para o DSPLAY 3.x
 ---

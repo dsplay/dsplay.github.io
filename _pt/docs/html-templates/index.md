@@ -19,32 +19,11 @@ Um template DSPLAY é só uma página web. Se você consegue construir com HTML,
 1. TOC
 {:toc}
 
-## Seu primeiro template
+## Comece por aqui
 
-1. Copie um boilerplate ([JavaScript](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/javascript), [jQuery](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/jquery) ou [React](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/react)) e inicie com live reload:
-
-   ```sh
-   npx degit dsplay/dsplay-templates/boilerplates/javascript my-template
-   cd my-template
-   npm install
-   npm start
-   ```
-
-2. Leia os dados do player com o [SDK](#sdks). Durante o desenvolvimento, eles vêm do mock em `dsplay-data.js`:
-
-   ```js
-   var u = dsplayTemplateUtils;
-   document.body.style.background = u.tval('background_color', '#000'); // variável de template, com valor padrão
-   document.querySelector('h1').textContent = u.media.name; // dados da mídia
-   ```
-
-3. Empacote e [envie](#publicação) para o Web Manager:
-
-   ```sh
-   npm run zip
-   ```
-
-   O comando também gera um manifesto com as variáveis de template encontradas no seu código (`tval`, `tbval`, `tival` e `tfval`), e o CMS as detecta para você.
+- [Criar um template do zero](./create-from-scratch): React, jQuery, JavaScript puro ou qualquer outra stack.
+- [Customizar um template do sistema](./customize-a-template): ajuste um template oficial, ou copie e altere o código.
+- [Serviços JSON](../json-services): alimente um template com dados do seu próprio endpoint.
 
 ## Quais mídias aceitam templates
 

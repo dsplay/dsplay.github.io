@@ -1,6 +1,6 @@
 ---
 parent: Templates HTML
-nav_order: 1
+nav_order: 3
 permalink: /pt/docs/html-templates/dsplay_config/
 title: dsplay_config
 ---
