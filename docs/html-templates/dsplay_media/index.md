@@ -6,7 +6,7 @@ has_children: true
 ---
 # `dsplay_media`
 
-Properties of the media being played. The general fields below exist for every media type; each type adds its own, flat in the same object.
+Everything the player knows about the media on screen, in one flat object: general fields for every media type, plus the fields of each type.
 
 ```js
 var dsplay_media = {

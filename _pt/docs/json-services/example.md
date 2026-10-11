@@ -6,7 +6,7 @@ title: "Exemplo: serviço hello"
 ---
 # Exemplo: serviço hello
 
-Um serviço que retorna uma saudação e um template que a exibe.
+Uma integração completa em duas peças pequenas: um serviço que retorna uma saudação e um template que a exibe.
 
 ## O serviço
 

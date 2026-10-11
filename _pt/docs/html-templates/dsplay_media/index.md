@@ -7,7 +7,7 @@ permalink: /pt/docs/html-templates/dsplay_media/
 ---
 # `dsplay_media`
 
-Propriedades da mídia em exibição. Os campos gerais abaixo existem em todos os tipos de mídia; cada tipo acrescenta os seus, no mesmo objeto (sem aninhamento).
+Tudo o que o player sabe sobre a mídia em exibição, em um único objeto (sem aninhamento): campos gerais de todos os tipos de mídia, mais os campos de cada tipo.
 
 ```js
 var dsplay_media = {

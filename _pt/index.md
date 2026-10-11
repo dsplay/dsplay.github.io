@@ -5,14 +5,18 @@ permalink: /pt/
 ---
 # DSPLAY para Desenvolvedores
 
-Bem-vindo ao site **DSPLAY Developers**
+**Uma tela é só uma página web, e os dados por trás dela são só JSON.** O DSPLAY deixa você controlar os dois.
 
-Aqui você encontra os recursos necessários para estender as funcionalidades e personalizar sua experiência com a plataforma [DSPLAY - Digital Signage](https://dsplay.tv).
+- **Personalize qualquer template.** Templates são HTML, CSS e JavaScript puros. Parta de um boilerplate, mude o que quiser, gere o zip e envie.
+- **Conecte qualquer fonte de dados.** Um serviço JSON é um endpoint HTTP que retorna JSON. Aponte uma mídia para ele e seu template renderiza o que ele devolver.
 
+```
+seus dados  →  serviço JSON  →  player DSPLAY  →  seu template  →  a tela
+```
 
-## Índice
+## Por onde começar
 {: .no_toc .text-delta }
 
-- [Templates HTML](./docs/html-templates)
-- [Parceiros](./docs/partners)
-- [Serviços JSON](./docs/json-services)
+- [Templates HTML](./docs/html-templates): do `npx degit` até a tela, com live reload e dados simulados.
+- [Serviços JSON](./docs/json-services): integre qualquer coisa que fale HTTP.
+- [Parceiros](./docs/partners): venda o DSPLAY para os seus clientes e gerencie as contas deles.

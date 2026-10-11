@@ -6,9 +6,7 @@ title: Exemplos
 ---
 # Exemplos
 
-Você sempre pode começar seu template a partir de um dos existentes.
-
-Segue a lista do código-fonte dos templates oficiais do DSPLAY:
+A forma mais rápida de aprender é ler um template de verdade. Estes são os oficiais, todos no repositório [dsplay-templates](https://github.com/dsplay/dsplay-templates): copie um e faça dele o seu.
 
 - <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/alerts" target="_blank">Alerts</a>
 - <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/analog-clock" target="_blank">Analog Clock</a>

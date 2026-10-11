@@ -4,7 +4,7 @@ nav_order: 1
 ---
 # Example: hello service
 
-A service that returns a greeting, and a template that shows it.
+A complete integration in two small pieces: a service that returns a greeting, and a template that shows it.
 
 ## The service
 

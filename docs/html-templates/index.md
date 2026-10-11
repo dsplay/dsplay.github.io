@@ -7,20 +7,47 @@ has_toc: false
 # HTML Templates
 {: .no_toc }
 
+A DSPLAY template is just a web page. If you can build it with HTML, CSS and JavaScript, it can run on a screen: any framework, any layout, your brand.
+
+- **Simple to customize.** Expose a color, a logo or a flag as a *template variable* and anyone can change it from a form in the CMS, with no code.
+- **Simple to feed.** Read what the player gives you from `dsplay_media`, or pair the template with a [JSON Service](../json-services) to show live data from anything reachable over HTTP.
+
 ## Table of contents
 {: .no_toc .text-delta }
 
 1. TOC
 {:toc}
 
-## What is an HTML Template?
+## Your first template
 
-An **HTML template** is the piece of software responsible for rendering the content of your media in your screen.
+1. Copy a boilerplate ([JavaScript](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/javascript), [jQuery](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/jquery) or [React](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/react)) and start it with live reload:
 
-In DSPLAY, most of media types can have its layout and presentation customized. 
-You can change colors, fonts, images, add your brand, and totally redefine the way a media will be displayed.
+   ```sh
+   npx degit dsplay/dsplay-templates/boilerplates/javascript my-template
+   cd my-template
+   npm install
+   npm start
+   ```
 
-The following checked media types allow customization through custom HTML templates:
+2. Read the player's data with the [SDK](#sdks). While you develop, it comes from the mock in `dsplay-data.js`:
+
+   ```js
+   var u = dsplayTemplateUtils;
+   document.body.style.background = u.tval('background_color', '#000'); // template variable, with a default
+   document.querySelector('h1').textContent = u.media.name; // media data
+   ```
+
+3. Pack it and [upload it](#deploying) to the Web Manager:
+
+   ```sh
+   npm run zip
+   ```
+
+   The command also generates a manifest with the template variables found in your code (`tval`, `tbval`, `tival` and `tfval`), so the CMS detects them for you.
+
+## Which media can use templates
+
+Most media types can be customized with a template: change colors, fonts and images, add your brand, redefine the layout. The checked ones allow custom HTML templates:
 - COVID-19
   - [ ] COVID-19 Vaccination
   - [ ] COVID-19 Cases
@@ -54,12 +81,12 @@ The following checked media types allow customization through custom HTML templa
   - [x] Message
   - [x] JSON Service
 
-> **Message** and **JSON Service** media types are too generic and because of that they don't have a default template. So these kind of media can only be created by using a custom template.
+> **Message** and **JSON Service** have no default template: they are the building blocks for your own. These media can only be created with a custom template.
 
 
 ## Basics
 
-All templates in DSPLAY are just simple HTML apps. They can be built using any tool that outputs a static HTML5 application.
+A template is a static HTML5 app. Build it with any tool that outputs one: a bundler, a framework or plain files.
 
 Your Template can include:
 - [x] HTML 5
@@ -116,7 +143,7 @@ A very simple `index.html` can look like the following:
 
 ## SDKs
 
-DSPLAY has some SDK libraries that helps you to create templates easily. Those libraries allow you to mock app data and test your templates locally.
+The SDKs read the player's data for you and let you test locally with mock data.
 
 ### The basic SDK
 
@@ -130,14 +157,14 @@ You can use this SDK in any template, built with [vanilla javascript](https://gi
 
 ### The React SDK
 
-Built on top of the basic SDK, [@dsplay/react-template-utils](https://github.com/dsplay/dsplay-templates/tree/main/packages/react-template-utils) provides the same funcionality plus some useful React components and hooks to make you life easier. 
+Built on top of the basic SDK, [@dsplay/react-template-utils](https://github.com/dsplay/dsplay-templates/tree/main/packages/react-template-utils) provides the same functionality plus React components and hooks.
 
 If you are building your template with [React](https://github.com/dsplay/dsplay-templates/tree/main/boilerplates/react), we recommend using this SDK.
 
 
 ## Local development: `dsplay-data.js`
 
-In order to make easier to test your template in your web browser during development time. You must have a file called `dsplay-data.js`, located anywhere and "imported" in your `index.html` (usually before the other scripts files).
+To develop in your browser, include a file called `dsplay-data.js`, located anywhere and imported in your `index.html` (usually before the other scripts). It mocks the data the player will provide.
 
 This file must contain 3 variables of `object` type, like this:
 
@@ -180,7 +207,7 @@ To deploy your template, just [create](https://manager.dsplay.tv/template/create
 1. Give your template a name;
 1. Choose your `.zip` file;
 1. Check the responsive option (it will be default soon);
-1. If your template define custom variables, you must register them clicking at the **'Add'** button in **'Template Vars'** region;
+1. Template variables: the CMS detects the ones in the manifest generated by the boilerplates' `npm run zip`. Otherwise, register each one with the **'Add'** button in the **'Template Vars'** region;
 1. Confirm by clicking **'Create'**.
 
 Done! Your template is available for use.

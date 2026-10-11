@@ -5,17 +5,21 @@ has_children: true
 ---
 # JSON Services
 
-A JSON Service media lets you integrate DSPLAY with anything: you provide an HTTP endpoint that returns JSON, and a [template](../html-templates) that renders it.
+Any data you can reach over HTTP can be on a DSPLAY screen. A JSON Service is the whole integration: an endpoint that returns JSON, and a [template](../html-templates) that renders it.
 
 ```
-your service  --JSON-->  DSPLAY Player  --dsplay_media.result-->  your template
+your data  →  your endpoint  →  DSPLAY player  →  your template  →  the screen
 ```
 
-1. Create an endpoint that returns the [response format](#response-format) below.
-2. Create a template that reads `dsplay_media.result` and renders it.
-3. In the CMS, create a JSON Service media with the endpoint URL (and optional headers) and the template.
+Stock levels, queue numbers, sales dashboards, sensor readings, an internal API: if you can return it as JSON, you can show it. Your service doesn't depend on DSPLAY, it only adds a couple of control fields to its JSON.
 
-See the [example](./example) for a complete service and template.
+## Three steps
+
+1. **Return JSON.** Any HTTP endpoint that answers with the [response format](#response-format) below.
+2. **Render it.** A template that reads `dsplay_media.result`.
+3. **Connect.** In the CMS, create a JSON Service media with the endpoint URL (and headers, for API keys), and select the template.
+
+The [example](./example) has a complete service and template in a few lines.
 
 ## Response format
 

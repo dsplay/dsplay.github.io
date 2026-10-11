@@ -4,9 +4,7 @@ nav_order: 5
 ---
 # Examples
 
-You can always start your template from one of the existing.
-
-Follows the list of DSPLAY official templates source code:
+The fastest way to learn is to read a real template. These are the official ones, all in the [dsplay-templates](https://github.com/dsplay/dsplay-templates) repository: copy one and make it yours.
 
 - <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/alerts" target="_blank">Alerts</a>
 - <a href="https://github.com/dsplay/dsplay-templates/tree/main/templates/analog-clock" target="_blank">Analog Clock</a>
