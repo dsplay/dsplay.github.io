@@ -6,6 +6,8 @@ Public documentation site for DSPLAY, published with GitHub Pages. Jekyll with t
 
 This is a repo for developers. Write succinctly and practically: say what a thing is and how to use it, skip introductions and filler.
 
+The pitch of these docs: customizing a template is simple (it is a web page, and template variables become CMS fields), and so is integrating any data source (a JSON service is one endpoint that returns JSON). Lead with what the developer can do and show it in code or commands; keep every claim verifiable in the code.
+
 For `dsplay_media` (and the other objects a template receives), document each field in a code sample, one variable per line with a comment explaining it. The Android player (`../dsplay-players/apps/android`, `player/*/*PlayerExecution.kt`) is the source of truth for which fields exist.
 
 ## Languages
